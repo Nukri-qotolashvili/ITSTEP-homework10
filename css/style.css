@@ -1,0 +1,524 @@
+/* ცვლადების დასაწყისი*/
+:root {
+  --black-color: #000;
+  --white-color: #ffffff;
+  --right-background-color: #83a69b;
+  --body-background-color: #f9f9f9;
+  --green-color: #3e7251;
+  --header-font: "Cormorant Garamond", serif;
+  --text-font: "Montserrat", sans-serif;
+}
+/* ცვლადების დასასრული */
+/* კლასების დასაწყისი */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-direction-column {
+  display: flex;
+  flex-direction: column;
+}
+.header-text-font {
+  font-family: var(--header-font);
+  text-decoration: none;
+  color: var(--black-color);
+}
+.text-font {
+  font-family: var(--text-font);
+  text-decoration: none;
+  color: var(--black-color);
+}
+.circle {
+  background-color: var(--black-color);
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.italic {
+  font-style: italic;
+}
+/* კლასების დასასრული */
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100svh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--body-background-color);
+}
+/* მარცხენა სექციის დასაწყისი */
+section.left {
+  position: relative;
+  height: 1500px;
+}
+/* მარცხენა სექციაშეი ჰედერის დასაწყისი */
+section.left header {
+  padding: 0px 40px;
+  height: 80px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  justify-content: space-between;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+section.left header.flex-center a.header-text-font {
+  font-size: 19px;
+  font-weight: 600;
+  padding-left: 40px;
+}
+section.left header.flex-center nav.flex-center ul li {
+  position: relative;
+  width: fit-content;
+}
+section.left header.flex-center nav.flex-center ul li a {
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+section.left header.flex-center nav.flex-center ul li a:hover {
+  color: var(--green-color);
+}
+section.left header nav ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+/* მარცხენა სექციაში ჰედერის დასასრული */
+/* მარხენა სექციის პირველი ჩაილდის დასაწყისი */
+section.left section:nth-child(2) {
+  height: 758px;
+  width: 100%;
+}
+section.left section:nth-child(2) div {
+  width: 50%;
+  height: 70%;
+}
+section.left section:nth-child(2) div h1 {
+  padding: 0px;
+  margin: 0px;
+  color: var(--black-color);
+  font-family: var(--header-font);
+  font-size: 85px;
+}
+section.left section:nth-child(2) div h2 {
+  padding: 0px;
+  margin: 0px;
+  font-family: var(--text-font);
+  font-size: 28px;
+  color: var(--black-color);
+  font-weight: 400;
+}
+section.left section:nth-child(2) div article {
+  padding-top: 70px;
+  line-height: 20px;
+}
+section.left section:nth-child(2) div article p {
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+section.left section:nth-child(2) div article p a {
+  color: var(--black-color);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+section.left section:nth-child(2) div article p#list-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+section.left section:nth-child(2) div article p#list-style a {
+  text-decoration: underline;
+}
+section.left section:nth-child(2) div article#resume {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+section.left section:nth-child(2) div article#resume a {
+  font-family: var(--text-font);
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--black-color);
+  transition: 0.5s;
+}
+section.left section:nth-child(2) div article#resume a:hover {
+  color: var(--green-color);
+}
+section.left section:nth-child(2) div article#resume img {
+  margin-left: 40px;
+  height: 20px;
+  width: 20px;
+}
+/* მარცხენა სექციაში პირველი ჩაილდის დასასრული */
+/* მარცხენა სექციაში მეორე ჩაილდის დასაწყისი */
+section.left section:nth-child(3) {
+  height: 616px;
+  width: 100%;
+}
+section.left section:nth-child(3) div {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+section.left section:nth-child(3) div article {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+section.left section:nth-child(3) div article h2 {
+  margin: 0px;
+  padding: 0px;
+  color: var(--black-color);
+  font-family: var(--header-font);
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+section.left section:nth-child(3) div article span {
+  height: 0.5px;
+  width: 300px;
+  right: 0;
+  background-color: var(--black-color);
+  position: absolute;
+}
+section.left section:nth-child(3) div p {
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+  line-height: 35px;
+}
+/* მარცხენა სექციაში მეორე ჩაილდის დასასრული */
+/* მარცხენა სექციის მესამე ჩაილდის დასაწყისი */
+section.left section:nth-child(4) {
+  height: 616px;
+  width: 100%;
+}
+section.left section:nth-child(4) div {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+section.left section:nth-child(4) div article {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+section.left section:nth-child(4) div article h2 {
+  margin: 0px;
+  padding-left: 40px;
+  color: var(--black-color);
+  font-family: var(--header-font);
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+section.left section:nth-child(4) div article span {
+  height: 0.5px;
+  width: 50px;
+  right: 0;
+  background-color: var(--black-color);
+  position: absolute;
+}
+section.left section:nth-child(4) div ul {
+  padding: 0px;
+  margin: 0px;
+}
+section.left section:nth-child(4) div ul li {
+  font-family: var(--text-font);
+  font-size: 15px;
+  color: var(--black-color);
+  line-height: 30px;
+}
+/* მარცხენა სექციის მესამე ჩაილდის დასასრული */
+/* მარცხენა სექციის მეოთხე ჩაილდის დასაწყისი */
+section.left section:nth-child(5) {
+  width: 100%;
+  height: 843px;
+}
+section.left section:nth-child(5) div article {
+  width: 100%;
+}
+section.left section:nth-child(5) div {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.left section:nth-child(5) div article#head {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+section.left section:nth-child(5) div article#head h2 {
+  margin: 0px;
+  color: var(--black-color);
+  font-family: var(--header-font);
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+section.left section:nth-child(5) div article#head span {
+  height: 0.5px;
+  width: 200px;
+  right: 0;
+  background-color: var(--black-color);
+  position: absolute;
+}
+section.left section:nth-child(5) div article b {
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+section.left section:nth-child(5) div article p {
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+section.left section:nth-child(5) div article b {
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+section.left section:nth-child(5) div article p {
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+section.left section:nth-child(5) div article b {
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+section.left section:nth-child(5) div article p {
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+/* მარცხენა სექციის მეოთხე ჩაილდის დასასრული */
+/* მარცხენა სექციის მეხუთე ჩაილდის დასაწყისი */
+section.left section:nth-child(6) {
+  width: 100%;
+  height: 475px;
+}
+section.left section:nth-child(6) div {
+  height: 40%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.left section:nth-child(6) div article {
+  width: 100%;
+}
+section.left section:nth-child(6) div article#head {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+section.left section:nth-child(6) div article#head h2 {
+  margin: 0px;
+  color: var(--black-color);
+  font-family: var(--header-font);
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+section.left section:nth-child(6) div article#head span {
+  height: 0.5px;
+  width: 200px;
+  right: 0;
+  background-color: var(--black-color);
+  position: absolute;
+}
+section.left section:nth-child(6) div article b {
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+section.left section:nth-child(6) div article p {
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+/* მარცხენა სექციის მეხუთე ჩაილდის დასასრული */
+/* მარცხენა სექციის მეექვსე ჩაილდის დასაწყისი */
+section.left section:nth-child(7) {
+  height: 616px;
+  width: 100%;
+  padding-top: 90px;
+}
+section.left section:nth-child(7) div {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.left section:nth-child(7) div article {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+section.left section:nth-child(7) div article h2 {
+  margin: 0px;
+  padding-left: 40px;
+  color: var(--black-color);
+  font-family: var(--header-font);
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+section.left section:nth-child(7) div article span {
+  height: 0.5px;
+  width: 90px;
+  right: 0;
+  background-color: var(--black-color);
+  position: absolute;
+}
+section.left section:nth-child(7) div ul {
+  padding: 0px;
+  margin: 0px;
+}
+section.left section:nth-child(7) div ul li {
+  font-family: var(--text-font);
+  font-size: 15px;
+  color: var(--black-color);
+  line-height: 30px;
+}
+/* მარცხენა სექციის მეექვსე ჩაილდის დასასრული */
+/* მარცხენა სექციის მეშვიდე ჩაილდის დასაწყისი */
+section.left section:nth-child(8) {
+  width: 100%;
+  height: 674px;
+}
+section.left section:nth-child(8) div {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.left section:nth-child(8) div article {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+section.left section:nth-child(8) div article h2 {
+  margin: 0px;
+  color: var(--black-color);
+  font-family: var(--header-font);
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+section.left section:nth-child(8) div article span {
+  height: 0.5px;
+  width: 200px;
+  right: 0;
+  background-color: var(--black-color);
+  position: absolute;
+}
+section.left section:nth-child(8) div article p {
+  width: 100%;
+  font-family: var(--text-font);
+  font-size: 15px;
+  padding: 0px;
+  margin: 5px 0px;
+}
+section.left section:nth-child(8) div article p a {
+  color: var(--black-color);
+  font-family: var(--text-font);
+  text-decoration: none;
+}
+section.left section:nth-child(8) div article p.flex-direction-column a {
+  color: var(--black-color);
+  letter-spacing: 2px;
+  line-height: 38px;
+  text-decoration: underline;
+  width: fit-content;
+}
+/* მარცხენა სექციის მეშვიდე ჩაილდის დასასრული */
+/* მარჯვენა სექციის დასაწყისი */
+section.right {
+  background-color: var(--right-background-color);
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  height: 100svh;
+  width: 50%;
+}
+section.right img {
+  position: fixed;
+  height: 420px;
+  width: 306px;
+  right: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.right button {
+  position: fixed;
+  right: 100px;
+  top: 30px;
+  height: 40px;
+  width: 157px;
+  background-color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+section.right button:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+/* მარჯვენა სექციის დასასრული */
+/* footer */
+section.left footer {
+  padding: 0px 200px;
+  width: 200%;
+  height: 141px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+section.left footer a {
+  color: var(--black-color);
+  font-family: var(--header-font);
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 800;
+}
+section.left footer a#wix {
+  text-decoration: underline;
+}
